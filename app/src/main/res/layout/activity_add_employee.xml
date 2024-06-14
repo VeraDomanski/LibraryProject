@@ -1,0 +1,41 @@
+<!-- res/layout/activity_add_employee.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    tools:context=".AddEmployeeActivity">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Employee Name"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextDepartment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="16dp"
+        android:hint="Department Name"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDepartment"
+        android:layout_marginTop="16dp"
+        android:hint="Salary Name"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/buttonAddEmployee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextSalary"
+        android:layout_marginTop="16dp"
+        android:text="Add Employee" />
+</RelativeLayout>
